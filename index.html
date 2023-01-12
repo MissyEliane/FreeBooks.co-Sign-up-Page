@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up page</title>
+    <title>Sign-up Form</title>
 
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="wrapper">
-        <div class="middle">
+        <i class="fa-regular fa-book-open-cover"></i>
+        <h5 class="logo">FreeBooks.Co </h5> 
+        <div class="sign-up">
             <h1>Sign Up</h1>
-            <form class="form1">
+            <form class="signupForm" method="post">
                 <label for="FirstName">First Name</label><br>
-                <input  class="inputClass" type="text" name="First Name"><br>
+                <input  class="inputClass" type="text" name="First Name" required minlength="1"><br>
                 <label for="LastName">Last Name</label><br>
-                <input class="inputClass"  type="text" name="Last Name"><br>
+                <input class="inputClass"  type="text" name="Last Name" required minlength="1"><br>
                 <label for="email">Email </label><br>
-                <input class="inputClass"  type="email" name="email"><br>
+                <input class="inputClass"  type="email" name="email" required><br>
                 <label for="password">Password</label><br>
-                <input  class="inputClass" type="password"/><br>
+                <input  class="inputClass" type="password" required minlength="5" maxlength="10"/><br>
                 <label for="confirmPassword">Confirm Password </label><br>
-                <input class="inputClass"  type="ConfirmPassword"/>
-                </form>
+                <input class="inputClass"  type="password" required minlength="5" maxlength="10"/>
             <div class="check">
-              <input type="checkbox" name="checkbox" value="agree"/><label for="checkbox">&nbsp I have agreed to the <a href= "https://example.com">Terms & Conditions</a></label>
+              <input type="checkbox" name="checkbox" value="agree"/><label for="checkbox">&nbsp I have agreed to the <a href= "https://example.com" target="_blank" >Terms & Conditions</a></label><br><br>
+              <button class="check" type="submit">CREATE ACCOUNT</button>
+              <p>Already have an account? Sign in <a href="https://example.com" target="_blank" >here</a></p>
               </div>
-              <button class="button">CREATE ACCOUNT</button>
-              <p>Already have an account? Sign in <a href="https://example.com">here</a></p>
-
-        </div>
+            </form>  
+     </div>
     </div>
-
-  
-  
 </body>
 </html>

@@ -1,73 +1,104 @@
 * {
-    padding:0;
-    margin:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+      --primaryFont:  "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      --textColor: white;
+  }
+  .wrapper {
+    width: 100%;
+    height:800px;
+    background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: "Cinzel", serif;
+    font-size: large;
+    color: rgb(241, 165, 24);
+    cursor: pointer;
+    font-family: var(--primaryFont);
+  }
+  .logo:hover {
+    transform: scale(1.08);
+  }
+
+  .sign-up {
+    height: 650px;
+    width: 500px;
+    border: transparent;
+    border-radius: 20px;
+    padding-left: 50px;
+    background-color: rgba(185, 77, 77, 0.185);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--primaryFont);
+    color: var(--textColor);
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .inputClass {
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    text-align:center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.178);
+    color: var(--textColor);
+  }
+
+  .signupForm {
+    width: 500px;
+  }
+  
+  .check {
+     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(47, 227, 255);
+  }
+
+  button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(81, 81, 206);
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width:320px) and (max-width: 479px){
+    .signupForm{
+    width: 80%;
+    margin: auto;
+    }
 }
-    .wrapper {
+
+@media only screen and (min-width:480px) and (max-width: 767px){
+    .signupForm{
         width: 100%;
-        height: 800px;
-        background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-size: cover;
-        /*position: relative;*/
-        display: flex;
-        /*flex-direction: column;*/
-        justify-content: center;
-        align-items: center;
-    }
-
-    .middle {
-       height: 600px;
-       width: 500px;
-       border: transparent;
-       border-radius: 20px;
-       padding-left: 50px;
-
-       background-color: transparent;
-       opacity: 1px;
-       display:flex;
-       flex-direction: column;
-       align-items:center;
-    }
-
-    h1 {
-        text-align: center;
-        padding-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .inputClass {
-        width: 80%;
-        height: 30px;
-        margin:10px;
-        /*text-align:center;*/
-        box-sizing: border-box;
-        border: none;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.205);
-    }
-    .form1 {
-        width: 500px;
-    }
-
-    .check {
-        display:flex;
-        flex-direction: row;
-        margin-top:10px;
-        margin-bottom:20px;
-        
-    }
-    a {
-        text-decoration: none;
-        color:blue;
-    }
-    .button {
-        width: 200px;
-        height:40px;
-        border:none;
-        border-radius: 10px;
-        background-color:blue;
-        color:white;
-        margin-bottom: 15px;
-
+        }
     }
