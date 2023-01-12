@@ -92,7 +92,7 @@
 
   @media only screen and (min-width:320px) and (max-width: 479px){
     .signupForm{
-    width: 80%;
+    width: 90%;
     margin: auto;
     }
 }
